@@ -1,8 +1,8 @@
 
-public class CommonImpl implements MyInterface {
+public class CommonImpl implements MyInterface<PolyParam> {
 
     @Override
-    public <T extends PolyParam> void method1(T param) {
-
+    public void method1(PolyParam param) {
+        param.op();
     }
 }

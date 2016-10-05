@@ -1,14 +1,9 @@
 
 
-public class DebugImpl implements MyInterface {
+public class DebugImpl implements MyInterface<DebugPolyParam> {
 
     @Override
-    public <T extends DebugPolyParam> void method1(T param) {
-
-    }
-
-    @Override
-    public <T extends PolyParam> void method1(T param) {
-
+    public void method1(DebugPolyParam param) {
+        param.debugOp();
     }
 }

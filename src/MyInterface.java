@@ -1,6 +1,6 @@
 
-public interface MyInterface {
+public interface MyInterface<T extends PolyParam> {
 
-    <T extends PolyParam> void method1(T param);
+    void method1(T param);
 
 }
